@@ -1,0 +1,27 @@
+// Función twoSum que encuentra dos números en el array 'numbers' cuya suma es igual a 'target'.
+twoSum(numbers, target);
+// Crea un nuevo objeto Map para almacenar los números y sus índices.
+numToIndex = nuevo Mapa();
+
+// Utiliza el método map para iterar sobre cada número en el array 'numbers'.
+resultados = map((num, i) => {
+  // Calcula el complemento necesario para alcanzar el objetivo.
+  complemento = target - num
+
+  // Verifica si el complemento está presente en el Map.
+  si(numToIndex tiene la clave complemento),
+    // Devuelve un array con los índices de los dos números que suman al objetivo.
+    devolver[índice del complemento, i]
+  sino:
+  // Actualiza el Map con el número actual y su índice, y  obtén el índice actual.
+  numToIndex.set(num, i)
+  índiceActual = numToIndex.get(num)
+            // Devuelve el índice actual.
+            devolver índiceActual
+}, numbers)
+
+// Filtra los resultados para eliminar aquellos que son undefined (cuando no se encuentra una pareja que sume al objetivo).
+resultadosFiltrados = filtrar(resultados, result => result no es undefined)
+
+    // Devuelve el array filtrado de resultados.
+    devolver resultadosFiltrados
