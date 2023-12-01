@@ -1,0 +1,25 @@
+DESCRIPTION:
+The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+
+Examples
+"din"      =>  "((("
+"recede"   =>  "()()()"
+"Success"  =>  ")())())"
+"(( @"     =>  "))((" 
+Notes
+Assertion messages may be unclear about what they display in some languages. If you read "...It Should encode XXX", the "XXX" is the expected result, not the input!
+
+
+***********************************************************************************************
+
+
+PseudoCode:
+1. Split the string into an array of characters
+2. Create an empty object to hold the characters and their count
+3. Loop through the array of characters
+4. If the character is not in the object, add it with a value of 1
+5. If the character is in the object, increment the value by 1
+6. Loop through the array of characters
+7. If the value of the character in the object is 1, add a "(" to the string
+8. If the value of the character in the object is more than 1, add a ")" to the string
+9. Return the string

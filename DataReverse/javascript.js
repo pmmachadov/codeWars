@@ -13,3 +13,7 @@ let dataReverse = (data) => {
 
   return reversedData;
 }
+
+console.log(dataReverse([1, 0, 1, 0, 1, 0, 1, 0])); // [1, 0, 1, 0, 1, 0, 1, 0]
+console.log(dataReverse([1, 1, 1, 1, 1, 1, 1, 1])); // [1, 1, 1, 1, 1, 1, 1, 1]
+console.log(dataReverse([1, 0, 0, 1, 0, 0, 1, 0])); // [0, 1, 0, 0, 1, 0, 0, 1]

@@ -15,6 +15,10 @@ The data is given in an array as such:
 [1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1,0]
 Note: In the C and NASM languages you are given the third parameter which is the number of segment blocks.
 
+
+***********************************************************************************************
+
+
 Pseudo Code:
 1. create an empty array
 2. create a for loop that will go through the entire array
