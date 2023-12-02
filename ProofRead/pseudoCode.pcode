@@ -1,0 +1,37 @@
+DESCRIPTION:
+You've just finished writing the last chapter for your novel when a virus suddenly infects your document. It has swapped the 'i's and 'e's in 'ei' words and capitalised random letters. Write a function which will:
+
+a) remove the spelling errors in 'ei' words. (Example of 'ei' words: their, caffeine, deceive, weight)
+
+b) only capitalise the first letter of each sentence. Make sure the rest of the sentence is in lower case.
+
+Example: He haD iEght ShOTs of CAffIEne. --> He had eight shots of caffeine.
+
+Pseudo code:
+
+1. split the string into an array of words
+2. iterate over the array of words
+3. if a word includes 'ie' then replace 'ie' with 'ei'
+4. if a word includes 'ei' then replace 'ei' with 'ie'
+5. join the array of words back into a string
+6. split the string into an array of sentences
+7. iterate over the array of sentences
+8. if the sentence is not the first sentence, then lowercase the sentence
+9. join the array of sentences back into a string
+10. return the string
+
+
+const Test = require('@codewars/test-compat');
+
+describe ("proofread",function() {
+it ("proofread",function() {
+
+
+Test.assertEquals( proofread("ThiEr DEcIEt wAs INconcIEVablE. sHe SIeZeD thE moMENT."), "Their deceit was inconceivable. She seized the moment."); 
+Test.assertEquals( proofread("HIs nieghBOur wAs oVerwieGht."), "His neighbour was overweight."); 
+Test.assertEquals( proofread("SHe rEcieveD a pIegNor."), "She received a peignor."); 
+ 
+});
+});
+
+*/
