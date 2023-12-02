@@ -1,0 +1,41 @@
+DESCRIPTION:
+Task
+Given an integer n, find the maximal number you can obtain by deleting exactly one digit of the given number.
+
+Example
+For n = 152, the output should be 52;
+
+For n = 1001, the output should be 101.
+
+Input/Output
+[input] integer n
+
+Constraints: 10 ≤ n ≤ 1000000.
+
+[output] an integer
+
+Pseudo Code:
+
+1.  Convert the number into a string.
+2.  Create a loop that iterates through the string.
+3.  Create a variable to hold the current number.
+4.  Create a variable to hold the max number.
+5.  Create a variable to hold the current digit.
+6.  Create a variable to hold the current number minus the current digit.
+7.  Convert the new number into a number.
+8.  Compare the new number with the max number.
+9.  If the new number is greater than the max number, then set the max number to the new number.
+10.  Return the max number.
+
+*/
+
+const Test = require('@codewars/test-compat');
+describe("Basic Tests", function(){
+it("It should works for basic tests.", function(){
+Test.assertEquals(deleteDigit(152),52)
+Test.assertEquals(deleteDigit(1001),101)
+Test.assertEquals(deleteDigit(10),1)
+
+})})
+
+*/
